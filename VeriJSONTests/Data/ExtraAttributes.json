@@ -1,0 +1,23 @@
+{
+    "id": 1,
+    "price": 12.50,
+    "name": "A green door",
+    "description": "This is a parameter not mentioned by the pattern, but it should be ignored.",
+    "manufacturer": {
+        "name": "ACME"
+    },
+    "discounted": true,
+    "properties": [
+        {
+            "name": "blah",
+            "value": "whatever",
+            "tags": [ "great" ],
+            "cost": 1.23
+        },
+        {
+            "name": "foo",
+            "value": "bar",
+            "tags": [ "some" ]
+        }
+    ]
+}

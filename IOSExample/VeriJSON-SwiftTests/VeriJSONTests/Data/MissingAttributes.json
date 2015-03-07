@@ -1,0 +1,9 @@
+{
+    "id": 1,
+    "price": 12.50,
+    "name": "A green door",
+    "manufacturer": {
+        "name": "ACME"
+    },
+    "discounted": true
+}

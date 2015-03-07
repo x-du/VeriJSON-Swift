@@ -1,0 +1,19 @@
+{
+    "id": 1,
+    "discounted": true,
+    "name": "A green door",
+    "manufacturer": {
+        "name": "ACME"
+    },
+    "properties": [
+        {
+            "name": "blah",
+            "value": "whatever",
+            "tags": [ "great" ]
+        },
+        {
+            "name": "foo",
+            "value": "bar"
+        }
+    ]
+}

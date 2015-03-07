@@ -1,0 +1,16 @@
+{
+    "id": "number",
+    "name": "string",
+    "price?": "number",
+    "discounted": "bool",
+    "manufacturer": {
+        "name": "string"
+    },
+    "properties": [
+        {
+            "name": "string",
+            "value": "string",
+            "tags?": [ "string" ]
+        }
+    ]
+}
