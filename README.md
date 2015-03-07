@@ -95,6 +95,7 @@ Pattern Example:
 ### More
 
 VeriJSON also supports Color, URL, HTTP, Email, Bool. 	
+
 ### Optionals
 	
 
