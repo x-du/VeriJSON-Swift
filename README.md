@@ -3,7 +3,7 @@ JSON validator in Swift.
 
 VeriJSON helps you validate your JSON data easily with pattern based rules. 
 
-The Objective-C version of VeriJSON was created by [dcutting](https://bitbucket.org/dcutting/verijson). 
+The Objective-C version of VeriJSON was created by [dcutting](https://bitbucket.org/dcutting/verijson).
 
 # Patterns
 
