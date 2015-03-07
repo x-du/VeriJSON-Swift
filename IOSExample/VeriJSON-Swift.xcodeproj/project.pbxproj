@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		274210FD1AAAB02C00EE46B3 /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274210FC1AAAB02C00EE46B3 /* VeriJSON.swift */; };
-		274210FE1AAAB02C00EE46B3 /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274210FC1AAAB02C00EE46B3 /* VeriJSON.swift */; };
+		27052FF41AAAB412008DEB31 /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27052FF31AAAB412008DEB31 /* VeriJSON.swift */; };
+		27052FF51AAAB412008DEB31 /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27052FF31AAAB412008DEB31 /* VeriJSON.swift */; };
 		277CDC1C1AA8ED3600A12561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CDC1B1AA8ED3600A12561 /* AppDelegate.swift */; };
 		277CDC1E1AA8ED3600A12561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CDC1D1AA8ED3600A12561 /* ViewController.swift */; };
 		277CDC211AA8ED3600A12561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277CDC1F1AA8ED3600A12561 /* Main.storyboard */; };
@@ -103,7 +103,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		274210FC1AAAB02C00EE46B3 /* VeriJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeriJSON.swift; sourceTree = "<group>"; };
+		27052FF31AAAB412008DEB31 /* VeriJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeriJSON.swift; sourceTree = "<group>"; };
 		277CDC161AA8ED3600A12561 /* VeriJSON-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VeriJSON-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277CDC1A1AA8ED3600A12561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		277CDC1B1AA8ED3600A12561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -209,18 +209,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		274210FB1AAAB02C00EE46B3 /* VeriJSON */ = {
+		27052FF21AAAB412008DEB31 /* VeriJSON */ = {
 			isa = PBXGroup;
 			children = (
-				274210FC1AAAB02C00EE46B3 /* VeriJSON.swift */,
+				27052FF31AAAB412008DEB31 /* VeriJSON.swift */,
 			);
-			path = VeriJSON;
+			name = VeriJSON;
+			path = ../VeriJSON;
 			sourceTree = "<group>";
 		};
 		277CDC0D1AA8ED3600A12561 = {
 			isa = PBXGroup;
 			children = (
-				274210FB1AAAB02C00EE46B3 /* VeriJSON */,
+				27052FF21AAAB412008DEB31 /* VeriJSON */,
 				277CDC181AA8ED3600A12561 /* VeriJSON-Swift */,
 				277CDC2E1AA8ED3600A12561 /* VeriJSON-SwiftTests */,
 				277CDC171AA8ED3600A12561 /* Products */,
@@ -546,7 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274210FD1AAAB02C00EE46B3 /* VeriJSON.swift in Sources */,
+				27052FF41AAAB412008DEB31 /* VeriJSON.swift in Sources */,
 				277CDC1E1AA8ED3600A12561 /* ViewController.swift in Sources */,
 				277CDC1C1AA8ED3600A12561 /* AppDelegate.swift in Sources */,
 			);
@@ -557,7 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				277CDCE51AA9001A00A12561 /* String+JSON.swift in Sources */,
-				274210FE1AAAB02C00EE46B3 /* VeriJSON.swift in Sources */,
+				27052FF51AAAB412008DEB31 /* VeriJSON.swift in Sources */,
 				277CDCE21AA8F4ED00A12561 /* VeriJSONTests.swift in Sources */,
 				277CDCE81AA9038C00A12561 /* NSBundle+JSONLoader.swift in Sources */,
 			);
