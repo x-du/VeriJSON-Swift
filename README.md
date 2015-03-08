@@ -14,7 +14,7 @@ The VeriJSON patterns are designed with simplicity in mind. The patterns are als
 
 ## Types
 
-VeriJson support validation of String, Number, Date, URL, HTTP, Email, Array and Dictionary types.
+VeriJSON supports validation of String, Number, Int, Date, URL, HTTP, Email, Array and Dictionary types.
 
 ### String
 
@@ -78,7 +78,7 @@ Valid json:
 
 ### Wildcard
 
-Wildcard symbol "*" specify the value can be any type, including collection types.  
+Wildcard symbol "*" specifies the value can be any type, including collection types.  
 
 Pattern Example: 
 	{
