@@ -14,7 +14,7 @@ extension NSBundle {
         
         if let path = self.pathForResource(resource, ofType: nil) {
             if let jsonData = NSData(contentsOfFile: path) {
-                return NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
+                return try? NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
             }
         }
         return nil;
