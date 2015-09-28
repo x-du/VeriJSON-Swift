@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0BB07B081BB987050085FB3A"
-               BuildableName = "VeriJSON-Swift-OSX.framework"
+               BuildableName = "VeriJSONSwift.framework"
                BlueprintName = "VeriJSON-Swift-OSX"
                ReferencedContainer = "container:VeriJSON-Swift.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BB07B081BB987050085FB3A"
-            BuildableName = "VeriJSON-Swift-OSX.framework"
+            BuildableName = "VeriJSONSwift.framework"
             BlueprintName = "VeriJSON-Swift-OSX"
             ReferencedContainer = "container:VeriJSON-Swift.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BB07B081BB987050085FB3A"
-            BuildableName = "VeriJSON-Swift-OSX.framework"
+            BuildableName = "VeriJSONSwift.framework"
             BlueprintName = "VeriJSON-Swift-OSX"
             ReferencedContainer = "container:VeriJSON-Swift.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0BB07B081BB987050085FB3A"
-            BuildableName = "VeriJSON-Swift-OSX.framework"
+            BuildableName = "VeriJSONSwift.framework"
             BlueprintName = "VeriJSON-Swift-OSX"
             ReferencedContainer = "container:VeriJSON-Swift.xcodeproj">
          </BuildableReference>
