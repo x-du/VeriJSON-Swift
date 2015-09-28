@@ -1,4 +1,7 @@
 # VeriJSON-Swift
+
+[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 JSON validator in Swift. 
 
 VeriJSON helps you validate your JSON data easily with pattern based rules. 

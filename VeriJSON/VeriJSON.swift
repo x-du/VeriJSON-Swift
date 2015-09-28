@@ -7,7 +7,13 @@
 //
 
 import Foundation
-import UIKit
+#if os(iOS)
+    import UIKit
+    typealias SKColor = UIColor
+    #elseif os(OSX)
+    import Cocoa
+    typealias SKColor = NSColor
+#endif
 
 enum VeriJSONErrorCode : Int {
     case InvalidPattern = 1
@@ -15,9 +21,9 @@ enum VeriJSONErrorCode : Int {
 
 let VeriJSONErrorDomain = "VeriJSONErrorDomain"
 
-class VeriJSON {
+public class VeriJSON {
 
-    func verifyJSON(json:AnyObject?, pattern:AnyObject?) -> Bool {
+    public func verifyJSON(json:AnyObject?, pattern:AnyObject?) -> Bool {
 
         do {
             try verifyJSONThrow(json, pattern: pattern)
@@ -299,7 +305,7 @@ class VeriJSON {
     
     internal func verifyColor(value:AnyObject) -> Bool {
 
-        var color:UIColor?
+        var color:SKColor?
         if let value = value as? NSString {
             
             color = colorWithHexString(value as String)
@@ -315,15 +321,15 @@ class VeriJSON {
         return color != nil
     }
     
-    internal func colorWithInt32(rgbValue: UInt32) -> UIColor? {
+    internal func colorWithInt32(rgbValue: UInt32) -> SKColor? {
         let r = CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0
         let g = CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0
         let b = CGFloat((rgbValue & 0x0000FF) >> 16) / 255.0
         
-        return UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        return SKColor(red: r, green: g, blue: b, alpha: 1.0)
     }
     
-    internal func colorWithHexString(hex:String) -> UIColor? {
+    internal func colorWithHexString(hex:String) -> SKColor? {
         var hexNumber: String = ""
         if hex.hasPrefix("0x") || hex.hasPrefix("0X") {
             hexNumber = hex.substringFromIndex(hex.startIndex.advancedBy(2))

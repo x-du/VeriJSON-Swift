@@ -8,11 +8,11 @@
 
 
 import XCTest
-
+@testable import VeriJSONSwift
 
 class VeriJSONTests: XCTestCase {
 
-    var veriJSON : VeriJSON?
+    var veriJSON : VeriJSONSwift.VeriJSON?
     var bundle = NSBundle(forClass: VeriJSONTests.self)
     
     override func setUp() {
