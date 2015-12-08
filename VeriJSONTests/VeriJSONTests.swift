@@ -8,11 +8,11 @@
 
 
 import XCTest
-
+@testable import VeriJSONSwift
 
 class VeriJSONTests: XCTestCase {
 
-    var veriJSON : VeriJSON?
+    var veriJSON : VeriJSONSwift.VeriJSON?
     var bundle = NSBundle(forClass: VeriJSONTests.self)
     
     override func setUp() {
@@ -28,8 +28,8 @@ class VeriJSONTests: XCTestCase {
     }
 
     func testNilJsonNilPattern() {
-        let valid = veriJSON!.verifyJSON(nil, pattern: nil)
-        XCTAssertTrue(valid, "Nil Json with Nil Pattern Should Pass!")
+            let valid = veriJSON!.verifyJSON(nil, pattern: nil)
+            XCTAssertTrue(valid, "Nil Json with Nil Pattern Should Pass!")
     }
 
     func testNonNilJsonNilPattern() {
@@ -156,7 +156,14 @@ class VeriJSONTests: XCTestCase {
         let json: AnyObject? = "{\"count\":42 }".toJson()
         let pattern: AnyObject? = "{\"count\":\"foobartype\" }".toJson()
         var error: NSError?
-        let valid = veriJSON?.verifyJSON(json, pattern: pattern, error:&error )
+        let valid: Bool
+        do {
+            try veriJSON?.verifyJSONThrow(json, pattern: pattern)
+            valid = true
+        } catch let error1 as NSError {
+            error = error1
+            valid = false
+        }
         XCTAssert(valid == false, "Should Failed on Bad Pattern")
         
         if let error = error {
@@ -175,7 +182,14 @@ class VeriJSONTests: XCTestCase {
         let json: AnyObject? = "[42]".toJson()
         let pattern: AnyObject? = bundle.jsonFromResource("ArrayPatternWithBadType.json")
         var error: NSError?
-        let valid = veriJSON?.verifyJSON(json, pattern: pattern, error:&error )
+        let valid: Bool
+        do {
+            try veriJSON?.verifyJSONThrow(json, pattern: pattern)
+            valid = true
+        } catch let error1 as NSError {
+            error = error1
+            valid = false
+        }
         XCTAssert(valid == false, "Should Failed on Bad Pattern")
         if let error = error {
             XCTAssert(error.domain == VeriJSONErrorDomain, "Invalid Error Domain")
@@ -192,7 +206,14 @@ class VeriJSONTests: XCTestCase {
         let json: AnyObject? = bundle.jsonFromResource("RealisticObject.json")
         let pattern: AnyObject? = bundle.jsonFromResource("RealisticObjectPatternInvalid.json")
         var error: NSError?
-        let valid = veriJSON?.verifyJSON(json, pattern: pattern, error:&error )
+        let valid: Bool
+        do {
+            try veriJSON?.verifyJSONThrow(json, pattern: pattern)
+            valid = true
+        } catch let error1 as NSError {
+            error = error1
+            valid = false
+        }
         XCTAssert(valid == false, "Should Failed on Bad Pattern")
         if let error = error {
             XCTAssert(error.domain == VeriJSONErrorDomain, "Invalid Error Domain")
@@ -264,15 +285,15 @@ class VeriJSONTests: XCTestCase {
         }
     }
     
-    internal func shouldPass(# json:String, pattern:String, message:String) {
+    internal func shouldPass(json  json:String, pattern:String, message:String) {
         should(pass:true, json:json, pattern: pattern, message: message)
     }
     
-    internal func shouldFail(# json:String, pattern:String, message:String) {
+    internal func shouldFail(json  json:String, pattern:String, message:String) {
         should(pass: false, json: json, pattern: pattern, message: message)
     }
     
-    internal func should(# pass:Bool, json:String, pattern:String, message:String) {
+    internal func should(pass  pass:Bool, json:String, pattern:String, message:String) {
         
         let jsonObj: AnyObject? = bundle.jsonFromResource(json)
         let patternObj: AnyObject? = bundle.jsonFromResource(pattern)

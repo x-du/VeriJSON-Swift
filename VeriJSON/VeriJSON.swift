@@ -7,7 +7,13 @@
 //
 
 import Foundation
-import UIKit
+#if os(iOS)
+    import UIKit
+    typealias SKColor = UIColor
+    #elseif os(OSX)
+    import Cocoa
+    typealias SKColor = NSColor
+#endif
 
 enum VeriJSONErrorCode : Int {
     case InvalidPattern = 1
@@ -15,34 +21,44 @@ enum VeriJSONErrorCode : Int {
 
 let VeriJSONErrorDomain = "VeriJSONErrorDomain"
 
-class VeriJSON {
+public class VeriJSON {
 
-    func verifyJSON(json:AnyObject?, pattern:AnyObject?) -> Bool {
-        
-        return verifyJSON(json, pattern: pattern, error: nil)
+    public func verifyJSON(json:AnyObject?, pattern:AnyObject?) -> Bool {
+
+        do {
+            try verifyJSONThrow(json, pattern: pattern)
+            return true
+        } catch {
+            return false
+        }
     }
     
+
     
-    func verifyJSON(json:AnyObject?, pattern:AnyObject?, error:NSErrorPointer) -> Bool {
+    func verifyJSONThrow(json:AnyObject?, pattern:AnyObject?) throws {
+        var error: NSError! = NSError(domain: "Migrator", code: 0, userInfo: nil)
 
         if let pattern: AnyObject = pattern {
             
             if let json: AnyObject = json {
                 
-                var patternStack:NSMutableArray = NSMutableArray(array:[""])
+                let patternStack:NSMutableArray = NSMutableArray(array:[""])
                 let valid = verifyValue(json, pattern: pattern, permitNull: false, patternStack: patternStack)
-                if (!valid && error != nil) {
-                    error.memory = buildErrorFromPatternStack(patternStack)
+                if (!valid && true) {
+                    error = buildErrorFromPatternStack(patternStack)
                 }
-                return valid
+                if valid {
+                    return
+                }
+                throw error
             } else {
                 //json missing -> Reject any
-                return false
+                throw error
             }
 
         } else {
             //pattern missing -> Accept any
-            return true
+            return
             
         }
         
@@ -69,7 +85,7 @@ class VeriJSON {
         default:
             if let pattern = pattern as? NSString {
                 
-                return verifyBaseValue(value, pattern:pattern, patternStack:patternStack)
+                return verifyBaseValue(value, pattern:pattern as String, patternStack:patternStack)
             } else {
                 return false
             }
@@ -83,7 +99,7 @@ class VeriJSON {
         var valid = true
         pattern.enumerateKeysAndObjectsUsingBlock { (attributeName, attributePattern, stop) -> Void in
             patternStack.addObject(attributeName)
-            let attributeValid = self.verifyObject(value,attributeName:attributeName as NSString, attributePattern:attributePattern, patternStack:patternStack)
+            let attributeValid = self.verifyObject(value,attributeName:attributeName as! NSString, attributePattern:attributePattern, patternStack:patternStack)
             if attributeValid {
                 patternStack.removeLastObject()
             } else {
@@ -137,7 +153,7 @@ class VeriJSON {
         var valid = false
         if "string" == pattern || pattern.hasPrefix("string:") {
             if let value = value as? NSString {
-                valid = verifyString(value, pattern:pattern)
+                valid = verifyString(value as String, pattern:pattern)
             } else {
                 valid = false
             }
@@ -226,8 +242,8 @@ class VeriJSON {
             let minStr = rangeValues[0]
             let maxStr = rangeValues[1]
             
-            let min = (minStr.utf16Count == 0) ? -FLT_MIN : (minStr as NSString).floatValue
-            let max = (maxStr.utf16Count == 0) ? -FLT_MAX : (maxStr as NSString).floatValue
+            let min = (minStr.utf16.count == 0) ? -FLT_MIN : (minStr as NSString).floatValue
+            let max = (maxStr.utf16.count == 0) ? -FLT_MAX : (maxStr as NSString).floatValue
 
             valid = min <= value.floatValue && max >= value.floatValue
             
@@ -243,8 +259,8 @@ class VeriJSON {
         let components = pattern.componentsSeparatedByString(":")
         if components.count > 1 {
             if let regexPattern = components[1] as String? {
-                if let regex = NSRegularExpression(pattern: regexPattern, options: NSRegularExpressionOptions(0), error:nil) {
-                    let numMatches = regex.numberOfMatchesInString(value, options: NSMatchingOptions.ReportCompletion, range: NSMakeRange(0, value.utf16Count))
+                if let regex = try? NSRegularExpression(pattern: regexPattern, options: NSRegularExpressionOptions(rawValue: 0)) {
+                    let numMatches = regex.numberOfMatchesInString(value, options: NSMatchingOptions.ReportCompletion, range: NSMakeRange(0, value.utf16.count))
                     return numMatches > 0
                 }
             }
@@ -263,9 +279,9 @@ class VeriJSON {
 
         if let url = urlFromValue(value) {
             
-            let scheme = url.scheme?.lowercaseString
+            let scheme = url.scheme.lowercaseString
             let host = url.host
-            return scheme != nil && host != nil && (scheme! == "http" || scheme! == "https") && host!.utf16Count > 0
+            return host != nil && (scheme == "http" || scheme == "https") && host!.utf16.count > 0
         } else {
             return false
         }
@@ -277,9 +293,9 @@ class VeriJSON {
         if let value = value as? NSString {
 
             let emailRegex = "[^@\\s]+@[^.@\\s]+(\\.[^.@\\s]+)+"
-            if let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegex) {
-                return emailTest.evaluateWithObject(value)
-            }
+            let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+            return emailTest.evaluateWithObject(value)
+            
         }
             
         return false
@@ -289,10 +305,10 @@ class VeriJSON {
     
     internal func verifyColor(value:AnyObject) -> Bool {
 
-        var color:UIColor?
+        var color:SKColor?
         if let value = value as? NSString {
             
-            color = colorWithHexString(value)
+            color = colorWithHexString(value as String)
             
         } else if let value = value as? NSNumber {
             if (value.longValue >= 0 && value.longValue <= 0xFFFFFF) {
@@ -305,24 +321,24 @@ class VeriJSON {
         return color != nil
     }
     
-    internal func colorWithInt32(rgbValue: UInt32) -> UIColor? {
+    internal func colorWithInt32(rgbValue: UInt32) -> SKColor? {
         let r = CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0
         let g = CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0
         let b = CGFloat((rgbValue & 0x0000FF) >> 16) / 255.0
         
-        return UIColor(red: r, green: g, blue: b, alpha: 1.0)
+        return SKColor(red: r, green: g, blue: b, alpha: 1.0)
     }
     
-    internal func colorWithHexString(hex:String) -> UIColor? {
+    internal func colorWithHexString(hex:String) -> SKColor? {
         var hexNumber: String = ""
         if hex.hasPrefix("0x") || hex.hasPrefix("0X") {
-            hexNumber = hex.substringFromIndex(advance(hex.startIndex, 2))
+            hexNumber = hex.substringFromIndex(hex.startIndex.advancedBy(2))
         }
-        if hexNumber.utf16Count != 6 {
+        if hexNumber.utf16.count != 6 {
             return nil
         }
         
-        var rgbValue = intValueFromHex(hexNumber)
+        let rgbValue = intValueFromHex(hexNumber)
         return colorWithInt32(rgbValue)
         
     }
@@ -336,7 +352,7 @@ class VeriJSON {
     internal func urlFromValue(value:AnyObject) -> NSURL? {
         if  let value = value as? String {
             let value = value.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
-            if value.utf16Count == 0 {
+            if value.utf16.count == 0 {
                 return nil
             } else {
                 return NSURL(string: value)

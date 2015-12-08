@@ -7,102 +7,194 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27052FF41AAAB412008DEB31 /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27052FF31AAAB412008DEB31 /* VeriJSON.swift */; };
-		27052FF51AAAB412008DEB31 /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27052FF31AAAB412008DEB31 /* VeriJSON.swift */; };
-		270530451AAAB67E008DEB31 /* ArrayOf0Strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FF81AAAB67E008DEB31 /* ArrayOf0Strings.json */; };
-		270530461AAAB67E008DEB31 /* ArrayOf1String.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FF91AAAB67E008DEB31 /* ArrayOf1String.json */; };
-		270530471AAAB67E008DEB31 /* ArrayOf2Strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFA1AAAB67E008DEB31 /* ArrayOf2Strings.json */; };
-		270530481AAAB67E008DEB31 /* ArrayOfStringsAndNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFB1AAAB67E008DEB31 /* ArrayOfStringsAndNumbers.json */; };
-		270530491AAAB67E008DEB31 /* ArrayOfStringsPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFC1AAAB67E008DEB31 /* ArrayOfStringsPattern.json */; };
-		2705304A1AAAB67E008DEB31 /* ArrayPatternWithBadType.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFD1AAAB67E008DEB31 /* ArrayPatternWithBadType.json */; };
-		2705304B1AAAB67E008DEB31 /* ExtraAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFE1AAAB67E008DEB31 /* ExtraAttributes.json */; };
-		2705304C1AAAB67E008DEB31 /* MissingAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFF1AAAB67E008DEB31 /* MissingAttributes.json */; };
-		2705304D1AAAB67E008DEB31 /* ObjectWithBool.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530001AAAB67E008DEB31 /* ObjectWithBool.json */; };
-		2705304E1AAAB67E008DEB31 /* ObjectWithBoolAsNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530011AAAB67E008DEB31 /* ObjectWithBoolAsNumber.json */; };
-		2705304F1AAAB67E008DEB31 /* ObjectWithBoolInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530021AAAB67E008DEB31 /* ObjectWithBoolInvalid.json */; };
-		270530501AAAB67E008DEB31 /* ObjectWithBoolPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530031AAAB67E008DEB31 /* ObjectWithBoolPattern.json */; };
-		270530511AAAB67E008DEB31 /* ObjectWithColor.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530041AAAB67E008DEB31 /* ObjectWithColor.json */; };
-		270530521AAAB67E008DEB31 /* ObjectWithColorInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530051AAAB67E008DEB31 /* ObjectWithColorInvalid.json */; };
-		270530531AAAB67E008DEB31 /* ObjectWithColorInvalidNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530061AAAB67E008DEB31 /* ObjectWithColorInvalidNumber.json */; };
-		270530541AAAB67E008DEB31 /* ObjectWithColorNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530071AAAB67E008DEB31 /* ObjectWithColorNumber.json */; };
-		270530551AAAB67E008DEB31 /* ObjectWithColorPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530081AAAB67E008DEB31 /* ObjectWithColorPattern.json */; };
-		270530561AAAB67E008DEB31 /* ObjectWithDateString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530091AAAB67E008DEB31 /* ObjectWithDateString.json */; };
-		270530571AAAB67E008DEB31 /* ObjectWithDateStringInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300A1AAAB67E008DEB31 /* ObjectWithDateStringInvalid.json */; };
-		270530581AAAB67E008DEB31 /* ObjectWithDateStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300B1AAAB67E008DEB31 /* ObjectWithDateStringPattern.json */; };
-		270530591AAAB67E008DEB31 /* ObjectWithEmail.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300C1AAAB67E008DEB31 /* ObjectWithEmail.json */; };
-		2705305A1AAAB67E008DEB31 /* ObjectWithEmailInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300D1AAAB67E008DEB31 /* ObjectWithEmailInvalid.json */; };
-		2705305B1AAAB67E008DEB31 /* ObjectWithEmailInvalid2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300E1AAAB67E008DEB31 /* ObjectWithEmailInvalid2.json */; };
-		2705305C1AAAB67E008DEB31 /* ObjectWithEmailInvalidEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300F1AAAB67E008DEB31 /* ObjectWithEmailInvalidEmpty.json */; };
-		2705305D1AAAB67E008DEB31 /* ObjectWithEmailPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530101AAAB67E008DEB31 /* ObjectWithEmailPattern.json */; };
-		2705305E1AAAB67E008DEB31 /* ObjectWithHTTPSURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530111AAAB67E008DEB31 /* ObjectWithHTTPSURL.json */; };
-		2705305F1AAAB67E008DEB31 /* ObjectWithHTTPSURLUppercaseScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530121AAAB67E008DEB31 /* ObjectWithHTTPSURLUppercaseScheme.json */; };
-		270530601AAAB67E008DEB31 /* ObjectWithHTTPURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530131AAAB67E008DEB31 /* ObjectWithHTTPURL.json */; };
-		270530611AAAB67E008DEB31 /* ObjectWithHTTPURLPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530141AAAB67E008DEB31 /* ObjectWithHTTPURLPattern.json */; };
-		270530621AAAB67E008DEB31 /* ObjectWithHTTPURLUppercaseScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530151AAAB67E008DEB31 /* ObjectWithHTTPURLUppercaseScheme.json */; };
-		270530631AAAB67E008DEB31 /* ObjectWithMultipleTypeArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530161AAAB67E008DEB31 /* ObjectWithMultipleTypeArray.json */; };
-		270530641AAAB67E008DEB31 /* ObjectWithMultipleTypeInt.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530171AAAB67E008DEB31 /* ObjectWithMultipleTypeInt.json */; };
-		270530651AAAB67E008DEB31 /* ObjectWithMultipleTypePattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530181AAAB67E008DEB31 /* ObjectWithMultipleTypePattern.json */; };
-		270530661AAAB67E008DEB31 /* ObjectWithMultipleTypeString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530191AAAB67E008DEB31 /* ObjectWithMultipleTypeString.json */; };
-		270530671AAAB67E008DEB31 /* ObjectWithNonNullArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301A1AAAB67E008DEB31 /* ObjectWithNonNullArray.json */; };
-		270530681AAAB67E008DEB31 /* ObjectWithNonObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301B1AAAB67E008DEB31 /* ObjectWithNonObject.json */; };
-		270530691AAAB67E008DEB31 /* ObjectWithNullArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301C1AAAB67E008DEB31 /* ObjectWithNullArray.json */; };
-		2705306A1AAAB67E008DEB31 /* ObjectWithNullString.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301D1AAAB67E008DEB31 /* ObjectWithNullString.json */; };
-		2705306B1AAAB67E008DEB31 /* ObjectWithNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301E1AAAB67E008DEB31 /* ObjectWithNumber.json */; };
-		2705306C1AAAB67E008DEB31 /* ObjectWithNumberInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301F1AAAB67E008DEB31 /* ObjectWithNumberInRange.json */; };
-		2705306D1AAAB67E008DEB31 /* ObjectWithNumberInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530201AAAB67E008DEB31 /* ObjectWithNumberInvalid.json */; };
-		2705306E1AAAB67E008DEB31 /* ObjectWithNumberNotInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530211AAAB67E008DEB31 /* ObjectWithNumberNotInRange.json */; };
-		2705306F1AAAB67E008DEB31 /* ObjectWithNumberPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530221AAAB67E008DEB31 /* ObjectWithNumberPattern.json */; };
-		270530701AAAB67E008DEB31 /* ObjectWithNumberRangePattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530231AAAB67E008DEB31 /* ObjectWithNumberRangePattern.json */; };
-		270530711AAAB67E008DEB31 /* ObjectWithObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530241AAAB67E008DEB31 /* ObjectWithObject.json */; };
-		270530721AAAB67E008DEB31 /* ObjectWithObjectInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530251AAAB67E008DEB31 /* ObjectWithObjectInvalid.json */; };
-		270530731AAAB67E008DEB31 /* ObjectWithObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530261AAAB67E008DEB31 /* ObjectWithObjectPattern.json */; };
-		270530741AAAB67E008DEB31 /* ObjectWithOptionalArrayPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530271AAAB67E008DEB31 /* ObjectWithOptionalArrayPattern.json */; };
-		270530751AAAB67E008DEB31 /* ObjectWithOptionalStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530281AAAB67E008DEB31 /* ObjectWithOptionalStringPattern.json */; };
-		270530761AAAB67E008DEB31 /* ObjectWithString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530291AAAB67E008DEB31 /* ObjectWithString.json */; };
-		270530771AAAB67E008DEB31 /* ObjectWithStringInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302A1AAAB67E008DEB31 /* ObjectWithStringInvalid.json */; };
-		270530781AAAB67E008DEB31 /* ObjectWithStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302B1AAAB67E008DEB31 /* ObjectWithStringPattern.json */; };
-		270530791AAAB67E008DEB31 /* ObjectWithURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302C1AAAB67E008DEB31 /* ObjectWithURL.json */; };
-		2705307A1AAAB67E008DEB31 /* ObjectWithURLInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302D1AAAB67E008DEB31 /* ObjectWithURLInvalid.json */; };
-		2705307B1AAAB67E008DEB31 /* ObjectWithURLInvalidEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302E1AAAB67E008DEB31 /* ObjectWithURLInvalidEmpty.json */; };
-		2705307C1AAAB67E008DEB31 /* ObjectWithURLInvalidWhitespace.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302F1AAAB67E008DEB31 /* ObjectWithURLInvalidWhitespace.json */; };
-		2705307D1AAAB67E008DEB31 /* ObjectWithURLNonString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530301AAAB67E008DEB31 /* ObjectWithURLNonString.json */; };
-		2705307E1AAAB67E008DEB31 /* ObjectWithURLPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530311AAAB67E008DEB31 /* ObjectWithURLPattern.json */; };
-		2705307F1AAAB67E008DEB31 /* ObjectWithURLRelative.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530321AAAB67E008DEB31 /* ObjectWithURLRelative.json */; };
-		270530801AAAB67E008DEB31 /* ObjectWithWildcardInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530331AAAB67E008DEB31 /* ObjectWithWildcardInvalid.json */; };
-		270530811AAAB67E008DEB31 /* ObjectWithWildcardPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530341AAAB67E008DEB31 /* ObjectWithWildcardPattern.json */; };
-		270530821AAAB67E008DEB31 /* ObjectWithWildcardValid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530351AAAB67E008DEB31 /* ObjectWithWildcardValid.json */; };
-		270530831AAAB67E008DEB31 /* RealisticObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530361AAAB67E008DEB31 /* RealisticObject.json */; };
-		270530841AAAB67E008DEB31 /* RealisticObjectOptional.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530371AAAB67E008DEB31 /* RealisticObjectOptional.json */; };
-		270530851AAAB67E008DEB31 /* RealisticObjectOptionalWrongType.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530381AAAB67E008DEB31 /* RealisticObjectOptionalWrongType.json */; };
-		270530861AAAB67E008DEB31 /* RealisticObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530391AAAB67E008DEB31 /* RealisticObjectPattern.json */; };
-		270530871AAAB67E008DEB31 /* RealisticObjectPatternInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303A1AAAB67E008DEB31 /* RealisticObjectPatternInvalid.json */; };
-		270530881AAAB67E008DEB31 /* RealisticObjectPatternOptional.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303B1AAAB67E008DEB31 /* RealisticObjectPatternOptional.json */; };
-		270530891AAAB67E008DEB31 /* SimpleArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303C1AAAB67E008DEB31 /* SimpleArray.json */; };
-		2705308A1AAAB67E008DEB31 /* SimpleArrayPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303D1AAAB67E008DEB31 /* SimpleArrayPattern.json */; };
-		2705308B1AAAB67E008DEB31 /* SimpleObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303E1AAAB67E008DEB31 /* SimpleObject.json */; };
-		2705308C1AAAB67E008DEB31 /* SimpleObjectInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303F1AAAB67E008DEB31 /* SimpleObjectInvalid.json */; };
-		2705308D1AAAB67E008DEB31 /* SimpleObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530401AAAB67E008DEB31 /* SimpleObjectPattern.json */; };
-		2705308E1AAAB67E008DEB31 /* NSBundle+JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530421AAAB67E008DEB31 /* NSBundle+JSONLoader.swift */; };
-		2705308F1AAAB67E008DEB31 /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530431AAAB67E008DEB31 /* String+JSON.swift */; };
-		270530901AAAB67E008DEB31 /* VeriJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530441AAAB67E008DEB31 /* VeriJSONTests.swift */; };
-		277CDC1C1AA8ED3600A12561 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CDC1B1AA8ED3600A12561 /* AppDelegate.swift */; };
-		277CDC1E1AA8ED3600A12561 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277CDC1D1AA8ED3600A12561 /* ViewController.swift */; };
-		277CDC211AA8ED3600A12561 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 277CDC1F1AA8ED3600A12561 /* Main.storyboard */; };
-		277CDC231AA8ED3600A12561 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 277CDC221AA8ED3600A12561 /* Images.xcassets */; };
-		277CDC261AA8ED3600A12561 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277CDC241AA8ED3600A12561 /* LaunchScreen.xib */; };
+		0BB07AA21BB985A40085FB3A /* VeriJSON-Swift-iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB07AA11BB985A40085FB3A /* VeriJSON-Swift-iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BB07AA91BB985A50085FB3A /* VeriJSONSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB07A9F1BB985A40085FB3A /* VeriJSONSwift.framework */; settings = {ASSET_TAGS = (); }; };
+		0BB07AB61BB985F30085FB3A /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27052FF31AAAB412008DEB31 /* VeriJSON.swift */; };
+		0BB07AB81BB986530085FB3A /* VeriJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530441AAAB67E008DEB31 /* VeriJSONTests.swift */; };
+		0BB07AB91BB9865D0085FB3A /* NSBundle+JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530421AAAB67E008DEB31 /* NSBundle+JSONLoader.swift */; };
+		0BB07ABA1BB9865D0085FB3A /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530431AAAB67E008DEB31 /* String+JSON.swift */; };
+		0BB07ABB1BB9866A0085FB3A /* ArrayOf0Strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FF81AAAB67E008DEB31 /* ArrayOf0Strings.json */; };
+		0BB07ABC1BB9866A0085FB3A /* ArrayOf1String.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FF91AAAB67E008DEB31 /* ArrayOf1String.json */; };
+		0BB07ABD1BB9866A0085FB3A /* ArrayOf2Strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFA1AAAB67E008DEB31 /* ArrayOf2Strings.json */; };
+		0BB07ABE1BB9866A0085FB3A /* ArrayOfStringsAndNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFB1AAAB67E008DEB31 /* ArrayOfStringsAndNumbers.json */; };
+		0BB07ABF1BB9866A0085FB3A /* ArrayOfStringsPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFC1AAAB67E008DEB31 /* ArrayOfStringsPattern.json */; };
+		0BB07AC01BB9866A0085FB3A /* ArrayPatternWithBadType.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFD1AAAB67E008DEB31 /* ArrayPatternWithBadType.json */; };
+		0BB07AC11BB9866A0085FB3A /* ExtraAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFE1AAAB67E008DEB31 /* ExtraAttributes.json */; };
+		0BB07AC21BB9866A0085FB3A /* MissingAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFF1AAAB67E008DEB31 /* MissingAttributes.json */; };
+		0BB07AC31BB9866A0085FB3A /* ObjectWithBool.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530001AAAB67E008DEB31 /* ObjectWithBool.json */; };
+		0BB07AC41BB9866A0085FB3A /* ObjectWithBoolAsNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530011AAAB67E008DEB31 /* ObjectWithBoolAsNumber.json */; };
+		0BB07AC51BB9866A0085FB3A /* ObjectWithBoolInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530021AAAB67E008DEB31 /* ObjectWithBoolInvalid.json */; };
+		0BB07AC61BB9866A0085FB3A /* ObjectWithBoolPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530031AAAB67E008DEB31 /* ObjectWithBoolPattern.json */; };
+		0BB07AC71BB9866A0085FB3A /* ObjectWithColor.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530041AAAB67E008DEB31 /* ObjectWithColor.json */; };
+		0BB07AC81BB9866A0085FB3A /* ObjectWithColorInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530051AAAB67E008DEB31 /* ObjectWithColorInvalid.json */; };
+		0BB07AC91BB9866A0085FB3A /* ObjectWithColorInvalidNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530061AAAB67E008DEB31 /* ObjectWithColorInvalidNumber.json */; };
+		0BB07ACA1BB9866A0085FB3A /* ObjectWithColorNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530071AAAB67E008DEB31 /* ObjectWithColorNumber.json */; };
+		0BB07ACB1BB9866A0085FB3A /* ObjectWithColorPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530081AAAB67E008DEB31 /* ObjectWithColorPattern.json */; };
+		0BB07ACC1BB9866A0085FB3A /* ObjectWithDateString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530091AAAB67E008DEB31 /* ObjectWithDateString.json */; };
+		0BB07ACD1BB9866A0085FB3A /* ObjectWithDateStringInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300A1AAAB67E008DEB31 /* ObjectWithDateStringInvalid.json */; };
+		0BB07ACE1BB9866A0085FB3A /* ObjectWithDateStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300B1AAAB67E008DEB31 /* ObjectWithDateStringPattern.json */; };
+		0BB07ACF1BB9866A0085FB3A /* ObjectWithEmail.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300C1AAAB67E008DEB31 /* ObjectWithEmail.json */; };
+		0BB07AD01BB9866A0085FB3A /* ObjectWithEmailInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300D1AAAB67E008DEB31 /* ObjectWithEmailInvalid.json */; };
+		0BB07AD11BB9866A0085FB3A /* ObjectWithEmailInvalid2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300E1AAAB67E008DEB31 /* ObjectWithEmailInvalid2.json */; };
+		0BB07AD21BB9866A0085FB3A /* ObjectWithEmailInvalidEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300F1AAAB67E008DEB31 /* ObjectWithEmailInvalidEmpty.json */; };
+		0BB07AD31BB9866A0085FB3A /* ObjectWithEmailPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530101AAAB67E008DEB31 /* ObjectWithEmailPattern.json */; };
+		0BB07AD41BB9866A0085FB3A /* ObjectWithHTTPSURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530111AAAB67E008DEB31 /* ObjectWithHTTPSURL.json */; };
+		0BB07AD51BB9866A0085FB3A /* ObjectWithHTTPSURLUppercaseScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530121AAAB67E008DEB31 /* ObjectWithHTTPSURLUppercaseScheme.json */; };
+		0BB07AD61BB9866A0085FB3A /* ObjectWithHTTPURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530131AAAB67E008DEB31 /* ObjectWithHTTPURL.json */; };
+		0BB07AD71BB9866A0085FB3A /* ObjectWithHTTPURLPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530141AAAB67E008DEB31 /* ObjectWithHTTPURLPattern.json */; };
+		0BB07AD81BB9866A0085FB3A /* ObjectWithHTTPURLUppercaseScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530151AAAB67E008DEB31 /* ObjectWithHTTPURLUppercaseScheme.json */; };
+		0BB07AD91BB9866A0085FB3A /* ObjectWithMultipleTypeArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530161AAAB67E008DEB31 /* ObjectWithMultipleTypeArray.json */; };
+		0BB07ADA1BB9866A0085FB3A /* ObjectWithMultipleTypeInt.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530171AAAB67E008DEB31 /* ObjectWithMultipleTypeInt.json */; };
+		0BB07ADB1BB9866A0085FB3A /* ObjectWithMultipleTypePattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530181AAAB67E008DEB31 /* ObjectWithMultipleTypePattern.json */; };
+		0BB07ADC1BB9866A0085FB3A /* ObjectWithMultipleTypeString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530191AAAB67E008DEB31 /* ObjectWithMultipleTypeString.json */; };
+		0BB07ADD1BB9866A0085FB3A /* ObjectWithNonNullArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301A1AAAB67E008DEB31 /* ObjectWithNonNullArray.json */; };
+		0BB07ADE1BB9866A0085FB3A /* ObjectWithNonObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301B1AAAB67E008DEB31 /* ObjectWithNonObject.json */; };
+		0BB07ADF1BB9866A0085FB3A /* ObjectWithNullArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301C1AAAB67E008DEB31 /* ObjectWithNullArray.json */; };
+		0BB07AE01BB9866A0085FB3A /* ObjectWithNullString.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301D1AAAB67E008DEB31 /* ObjectWithNullString.json */; };
+		0BB07AE11BB9866A0085FB3A /* ObjectWithNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301E1AAAB67E008DEB31 /* ObjectWithNumber.json */; };
+		0BB07AE21BB9866A0085FB3A /* ObjectWithNumberInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301F1AAAB67E008DEB31 /* ObjectWithNumberInRange.json */; };
+		0BB07AE31BB9866A0085FB3A /* ObjectWithNumberInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530201AAAB67E008DEB31 /* ObjectWithNumberInvalid.json */; };
+		0BB07AE41BB9866A0085FB3A /* ObjectWithNumberNotInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530211AAAB67E008DEB31 /* ObjectWithNumberNotInRange.json */; };
+		0BB07AE51BB9866A0085FB3A /* ObjectWithNumberPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530221AAAB67E008DEB31 /* ObjectWithNumberPattern.json */; };
+		0BB07AE61BB9866A0085FB3A /* ObjectWithNumberRangePattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530231AAAB67E008DEB31 /* ObjectWithNumberRangePattern.json */; };
+		0BB07AE71BB9866A0085FB3A /* ObjectWithObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530241AAAB67E008DEB31 /* ObjectWithObject.json */; };
+		0BB07AE81BB9866A0085FB3A /* ObjectWithObjectInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530251AAAB67E008DEB31 /* ObjectWithObjectInvalid.json */; };
+		0BB07AE91BB9866A0085FB3A /* ObjectWithObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530261AAAB67E008DEB31 /* ObjectWithObjectPattern.json */; };
+		0BB07AEA1BB9866A0085FB3A /* ObjectWithOptionalArrayPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530271AAAB67E008DEB31 /* ObjectWithOptionalArrayPattern.json */; };
+		0BB07AEB1BB9866A0085FB3A /* ObjectWithOptionalStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530281AAAB67E008DEB31 /* ObjectWithOptionalStringPattern.json */; };
+		0BB07AEC1BB9866B0085FB3A /* ObjectWithString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530291AAAB67E008DEB31 /* ObjectWithString.json */; };
+		0BB07AED1BB9866B0085FB3A /* ObjectWithStringInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302A1AAAB67E008DEB31 /* ObjectWithStringInvalid.json */; };
+		0BB07AEE1BB9866B0085FB3A /* ObjectWithStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302B1AAAB67E008DEB31 /* ObjectWithStringPattern.json */; };
+		0BB07AEF1BB9866B0085FB3A /* ObjectWithURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302C1AAAB67E008DEB31 /* ObjectWithURL.json */; };
+		0BB07AF01BB9866B0085FB3A /* ObjectWithURLInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302D1AAAB67E008DEB31 /* ObjectWithURLInvalid.json */; };
+		0BB07AF11BB9866B0085FB3A /* ObjectWithURLInvalidEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302E1AAAB67E008DEB31 /* ObjectWithURLInvalidEmpty.json */; };
+		0BB07AF21BB9866B0085FB3A /* ObjectWithURLInvalidWhitespace.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302F1AAAB67E008DEB31 /* ObjectWithURLInvalidWhitespace.json */; };
+		0BB07AF31BB9866B0085FB3A /* ObjectWithURLNonString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530301AAAB67E008DEB31 /* ObjectWithURLNonString.json */; };
+		0BB07AF41BB9866B0085FB3A /* ObjectWithURLPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530311AAAB67E008DEB31 /* ObjectWithURLPattern.json */; };
+		0BB07AF51BB9866B0085FB3A /* ObjectWithURLRelative.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530321AAAB67E008DEB31 /* ObjectWithURLRelative.json */; };
+		0BB07AF61BB9866B0085FB3A /* ObjectWithWildcardInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530331AAAB67E008DEB31 /* ObjectWithWildcardInvalid.json */; };
+		0BB07AF71BB9866B0085FB3A /* ObjectWithWildcardPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530341AAAB67E008DEB31 /* ObjectWithWildcardPattern.json */; };
+		0BB07AF81BB9866B0085FB3A /* ObjectWithWildcardValid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530351AAAB67E008DEB31 /* ObjectWithWildcardValid.json */; };
+		0BB07AF91BB9866B0085FB3A /* RealisticObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530361AAAB67E008DEB31 /* RealisticObject.json */; };
+		0BB07AFA1BB9866B0085FB3A /* RealisticObjectOptional.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530371AAAB67E008DEB31 /* RealisticObjectOptional.json */; };
+		0BB07AFB1BB9866B0085FB3A /* RealisticObjectOptionalWrongType.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530381AAAB67E008DEB31 /* RealisticObjectOptionalWrongType.json */; };
+		0BB07AFC1BB9866B0085FB3A /* RealisticObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530391AAAB67E008DEB31 /* RealisticObjectPattern.json */; };
+		0BB07AFD1BB9866B0085FB3A /* RealisticObjectPatternInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303A1AAAB67E008DEB31 /* RealisticObjectPatternInvalid.json */; };
+		0BB07AFE1BB9866B0085FB3A /* RealisticObjectPatternOptional.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303B1AAAB67E008DEB31 /* RealisticObjectPatternOptional.json */; };
+		0BB07AFF1BB9866B0085FB3A /* SimpleArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303C1AAAB67E008DEB31 /* SimpleArray.json */; };
+		0BB07B001BB9866B0085FB3A /* SimpleArrayPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303D1AAAB67E008DEB31 /* SimpleArrayPattern.json */; };
+		0BB07B011BB9866B0085FB3A /* SimpleObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303E1AAAB67E008DEB31 /* SimpleObject.json */; };
+		0BB07B021BB9866B0085FB3A /* SimpleObjectInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303F1AAAB67E008DEB31 /* SimpleObjectInvalid.json */; };
+		0BB07B031BB9866B0085FB3A /* SimpleObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530401AAAB67E008DEB31 /* SimpleObjectPattern.json */; };
+		0BB07B0C1BB987050085FB3A /* VeriJSON-Swift-OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BB07B0B1BB987050085FB3A /* VeriJSON-Swift-OSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BB07B131BB987060085FB3A /* VeriJSONSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB07B091BB987050085FB3A /* VeriJSONSwift.framework */; settings = {ASSET_TAGS = (); }; };
+		0BB07B211BB9871B0085FB3A /* VeriJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27052FF31AAAB412008DEB31 /* VeriJSON.swift */; };
+		0BB07B221BB987310085FB3A /* VeriJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530441AAAB67E008DEB31 /* VeriJSONTests.swift */; };
+		0BB07B231BB987370085FB3A /* NSBundle+JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530421AAAB67E008DEB31 /* NSBundle+JSONLoader.swift */; };
+		0BB07B241BB987370085FB3A /* String+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270530431AAAB67E008DEB31 /* String+JSON.swift */; };
+		0BB07B251BB987410085FB3A /* ArrayOf0Strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FF81AAAB67E008DEB31 /* ArrayOf0Strings.json */; };
+		0BB07B261BB987410085FB3A /* ArrayOf1String.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FF91AAAB67E008DEB31 /* ArrayOf1String.json */; };
+		0BB07B271BB987410085FB3A /* ArrayOf2Strings.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFA1AAAB67E008DEB31 /* ArrayOf2Strings.json */; };
+		0BB07B281BB987410085FB3A /* ArrayOfStringsAndNumbers.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFB1AAAB67E008DEB31 /* ArrayOfStringsAndNumbers.json */; };
+		0BB07B291BB987410085FB3A /* ArrayOfStringsPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFC1AAAB67E008DEB31 /* ArrayOfStringsPattern.json */; };
+		0BB07B2A1BB987410085FB3A /* ArrayPatternWithBadType.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFD1AAAB67E008DEB31 /* ArrayPatternWithBadType.json */; };
+		0BB07B2B1BB987410085FB3A /* ExtraAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFE1AAAB67E008DEB31 /* ExtraAttributes.json */; };
+		0BB07B2C1BB987410085FB3A /* MissingAttributes.json in Resources */ = {isa = PBXBuildFile; fileRef = 27052FFF1AAAB67E008DEB31 /* MissingAttributes.json */; };
+		0BB07B2D1BB987410085FB3A /* ObjectWithBool.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530001AAAB67E008DEB31 /* ObjectWithBool.json */; };
+		0BB07B2E1BB987410085FB3A /* ObjectWithBoolAsNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530011AAAB67E008DEB31 /* ObjectWithBoolAsNumber.json */; };
+		0BB07B2F1BB987410085FB3A /* ObjectWithBoolInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530021AAAB67E008DEB31 /* ObjectWithBoolInvalid.json */; };
+		0BB07B301BB987410085FB3A /* ObjectWithBoolPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530031AAAB67E008DEB31 /* ObjectWithBoolPattern.json */; };
+		0BB07B311BB987410085FB3A /* ObjectWithColor.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530041AAAB67E008DEB31 /* ObjectWithColor.json */; };
+		0BB07B321BB987410085FB3A /* ObjectWithColorInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530051AAAB67E008DEB31 /* ObjectWithColorInvalid.json */; };
+		0BB07B331BB987410085FB3A /* ObjectWithColorInvalidNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530061AAAB67E008DEB31 /* ObjectWithColorInvalidNumber.json */; };
+		0BB07B341BB987410085FB3A /* ObjectWithColorNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530071AAAB67E008DEB31 /* ObjectWithColorNumber.json */; };
+		0BB07B351BB987410085FB3A /* ObjectWithColorPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530081AAAB67E008DEB31 /* ObjectWithColorPattern.json */; };
+		0BB07B361BB987410085FB3A /* ObjectWithDateString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530091AAAB67E008DEB31 /* ObjectWithDateString.json */; };
+		0BB07B371BB987410085FB3A /* ObjectWithDateStringInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300A1AAAB67E008DEB31 /* ObjectWithDateStringInvalid.json */; };
+		0BB07B381BB987410085FB3A /* ObjectWithDateStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300B1AAAB67E008DEB31 /* ObjectWithDateStringPattern.json */; };
+		0BB07B391BB987410085FB3A /* ObjectWithEmail.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300C1AAAB67E008DEB31 /* ObjectWithEmail.json */; };
+		0BB07B3A1BB987410085FB3A /* ObjectWithEmailInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300D1AAAB67E008DEB31 /* ObjectWithEmailInvalid.json */; };
+		0BB07B3B1BB987410085FB3A /* ObjectWithEmailInvalid2.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300E1AAAB67E008DEB31 /* ObjectWithEmailInvalid2.json */; };
+		0BB07B3C1BB987410085FB3A /* ObjectWithEmailInvalidEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705300F1AAAB67E008DEB31 /* ObjectWithEmailInvalidEmpty.json */; };
+		0BB07B3D1BB987410085FB3A /* ObjectWithEmailPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530101AAAB67E008DEB31 /* ObjectWithEmailPattern.json */; };
+		0BB07B3E1BB987410085FB3A /* ObjectWithHTTPSURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530111AAAB67E008DEB31 /* ObjectWithHTTPSURL.json */; };
+		0BB07B3F1BB987410085FB3A /* ObjectWithHTTPSURLUppercaseScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530121AAAB67E008DEB31 /* ObjectWithHTTPSURLUppercaseScheme.json */; };
+		0BB07B401BB987410085FB3A /* ObjectWithHTTPURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530131AAAB67E008DEB31 /* ObjectWithHTTPURL.json */; };
+		0BB07B411BB987410085FB3A /* ObjectWithHTTPURLPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530141AAAB67E008DEB31 /* ObjectWithHTTPURLPattern.json */; };
+		0BB07B421BB987410085FB3A /* ObjectWithHTTPURLUppercaseScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530151AAAB67E008DEB31 /* ObjectWithHTTPURLUppercaseScheme.json */; };
+		0BB07B431BB987410085FB3A /* ObjectWithMultipleTypeArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530161AAAB67E008DEB31 /* ObjectWithMultipleTypeArray.json */; };
+		0BB07B441BB987410085FB3A /* ObjectWithMultipleTypeInt.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530171AAAB67E008DEB31 /* ObjectWithMultipleTypeInt.json */; };
+		0BB07B451BB987410085FB3A /* ObjectWithMultipleTypePattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530181AAAB67E008DEB31 /* ObjectWithMultipleTypePattern.json */; };
+		0BB07B461BB987410085FB3A /* ObjectWithMultipleTypeString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530191AAAB67E008DEB31 /* ObjectWithMultipleTypeString.json */; };
+		0BB07B471BB987410085FB3A /* ObjectWithNonNullArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301A1AAAB67E008DEB31 /* ObjectWithNonNullArray.json */; };
+		0BB07B481BB987410085FB3A /* ObjectWithNonObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301B1AAAB67E008DEB31 /* ObjectWithNonObject.json */; };
+		0BB07B491BB987410085FB3A /* ObjectWithNullArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301C1AAAB67E008DEB31 /* ObjectWithNullArray.json */; };
+		0BB07B4A1BB987410085FB3A /* ObjectWithNullString.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301D1AAAB67E008DEB31 /* ObjectWithNullString.json */; };
+		0BB07B4B1BB987410085FB3A /* ObjectWithNumber.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301E1AAAB67E008DEB31 /* ObjectWithNumber.json */; };
+		0BB07B4C1BB987410085FB3A /* ObjectWithNumberInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705301F1AAAB67E008DEB31 /* ObjectWithNumberInRange.json */; };
+		0BB07B4D1BB987410085FB3A /* ObjectWithNumberInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530201AAAB67E008DEB31 /* ObjectWithNumberInvalid.json */; };
+		0BB07B4E1BB987410085FB3A /* ObjectWithNumberNotInRange.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530211AAAB67E008DEB31 /* ObjectWithNumberNotInRange.json */; };
+		0BB07B4F1BB987410085FB3A /* ObjectWithNumberPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530221AAAB67E008DEB31 /* ObjectWithNumberPattern.json */; };
+		0BB07B501BB987410085FB3A /* ObjectWithNumberRangePattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530231AAAB67E008DEB31 /* ObjectWithNumberRangePattern.json */; };
+		0BB07B511BB987410085FB3A /* ObjectWithObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530241AAAB67E008DEB31 /* ObjectWithObject.json */; };
+		0BB07B521BB987410085FB3A /* ObjectWithObjectInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530251AAAB67E008DEB31 /* ObjectWithObjectInvalid.json */; };
+		0BB07B531BB987410085FB3A /* ObjectWithObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530261AAAB67E008DEB31 /* ObjectWithObjectPattern.json */; };
+		0BB07B541BB987410085FB3A /* ObjectWithOptionalArrayPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530271AAAB67E008DEB31 /* ObjectWithOptionalArrayPattern.json */; };
+		0BB07B551BB987410085FB3A /* ObjectWithOptionalStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530281AAAB67E008DEB31 /* ObjectWithOptionalStringPattern.json */; };
+		0BB07B561BB987410085FB3A /* ObjectWithString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530291AAAB67E008DEB31 /* ObjectWithString.json */; };
+		0BB07B571BB987410085FB3A /* ObjectWithStringInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302A1AAAB67E008DEB31 /* ObjectWithStringInvalid.json */; };
+		0BB07B581BB987420085FB3A /* ObjectWithStringPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302B1AAAB67E008DEB31 /* ObjectWithStringPattern.json */; };
+		0BB07B591BB987420085FB3A /* ObjectWithURL.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302C1AAAB67E008DEB31 /* ObjectWithURL.json */; };
+		0BB07B5A1BB987420085FB3A /* ObjectWithURLInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302D1AAAB67E008DEB31 /* ObjectWithURLInvalid.json */; };
+		0BB07B5B1BB987420085FB3A /* ObjectWithURLInvalidEmpty.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302E1AAAB67E008DEB31 /* ObjectWithURLInvalidEmpty.json */; };
+		0BB07B5C1BB987420085FB3A /* ObjectWithURLInvalidWhitespace.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705302F1AAAB67E008DEB31 /* ObjectWithURLInvalidWhitespace.json */; };
+		0BB07B5D1BB987420085FB3A /* ObjectWithURLNonString.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530301AAAB67E008DEB31 /* ObjectWithURLNonString.json */; };
+		0BB07B5E1BB987420085FB3A /* ObjectWithURLPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530311AAAB67E008DEB31 /* ObjectWithURLPattern.json */; };
+		0BB07B5F1BB987420085FB3A /* ObjectWithURLRelative.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530321AAAB67E008DEB31 /* ObjectWithURLRelative.json */; };
+		0BB07B601BB987420085FB3A /* ObjectWithWildcardInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530331AAAB67E008DEB31 /* ObjectWithWildcardInvalid.json */; };
+		0BB07B611BB987420085FB3A /* ObjectWithWildcardPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530341AAAB67E008DEB31 /* ObjectWithWildcardPattern.json */; };
+		0BB07B621BB987420085FB3A /* ObjectWithWildcardValid.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530351AAAB67E008DEB31 /* ObjectWithWildcardValid.json */; };
+		0BB07B631BB987420085FB3A /* RealisticObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530361AAAB67E008DEB31 /* RealisticObject.json */; };
+		0BB07B641BB987420085FB3A /* RealisticObjectOptional.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530371AAAB67E008DEB31 /* RealisticObjectOptional.json */; };
+		0BB07B651BB987420085FB3A /* RealisticObjectOptionalWrongType.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530381AAAB67E008DEB31 /* RealisticObjectOptionalWrongType.json */; };
+		0BB07B661BB987420085FB3A /* RealisticObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530391AAAB67E008DEB31 /* RealisticObjectPattern.json */; };
+		0BB07B671BB987420085FB3A /* RealisticObjectPatternInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303A1AAAB67E008DEB31 /* RealisticObjectPatternInvalid.json */; };
+		0BB07B681BB987420085FB3A /* RealisticObjectPatternOptional.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303B1AAAB67E008DEB31 /* RealisticObjectPatternOptional.json */; };
+		0BB07B691BB987420085FB3A /* SimpleArray.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303C1AAAB67E008DEB31 /* SimpleArray.json */; };
+		0BB07B6A1BB987420085FB3A /* SimpleArrayPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303D1AAAB67E008DEB31 /* SimpleArrayPattern.json */; };
+		0BB07B6B1BB987420085FB3A /* SimpleObject.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303E1AAAB67E008DEB31 /* SimpleObject.json */; };
+		0BB07B6C1BB987420085FB3A /* SimpleObjectInvalid.json in Resources */ = {isa = PBXBuildFile; fileRef = 2705303F1AAAB67E008DEB31 /* SimpleObjectInvalid.json */; };
+		0BB07B6D1BB987420085FB3A /* SimpleObjectPattern.json in Resources */ = {isa = PBXBuildFile; fileRef = 270530401AAAB67E008DEB31 /* SimpleObjectPattern.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		277CDC2C1AA8ED3600A12561 /* PBXContainerItemProxy */ = {
+		0BB07AAA1BB985A50085FB3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 277CDC0E1AA8ED3600A12561 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 277CDC151AA8ED3600A12561;
-			remoteInfo = "VeriJSON-Swift";
+			remoteGlobalIDString = 0BB07A9E1BB985A40085FB3A;
+			remoteInfo = "VeriJSON-Swift-iOS";
+		};
+		0BB07B141BB987060085FB3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 277CDC0E1AA8ED3600A12561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BB07B081BB987050085FB3A;
+			remoteInfo = "VeriJSON-Swift-OSX";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB07A9F1BB985A40085FB3A /* VeriJSONSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VeriJSONSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB07AA11BB985A40085FB3A /* VeriJSON-Swift-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeriJSON-Swift-iOS.h"; sourceTree = "<group>"; };
+		0BB07AA31BB985A40085FB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB07AA81BB985A40085FB3A /* VeriJSON-Swift-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VeriJSON-Swift-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB07AAF1BB985A50085FB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB07B091BB987050085FB3A /* VeriJSONSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = VeriJSONSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB07B0B1BB987050085FB3A /* VeriJSON-Swift-OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VeriJSON-Swift-OSX.h"; sourceTree = "<group>"; };
+		0BB07B0D1BB987050085FB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB07B121BB987050085FB3A /* VeriJSON-Swift-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VeriJSON-Swift-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BB07B191BB987060085FB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27052FF31AAAB412008DEB31 /* VeriJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeriJSON.swift; sourceTree = "<group>"; };
 		27052FF81AAAB67E008DEB31 /* ArrayOf0Strings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ArrayOf0Strings.json; sourceTree = "<group>"; };
 		27052FF91AAAB67E008DEB31 /* ArrayOf1String.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ArrayOf1String.json; sourceTree = "<group>"; };
@@ -180,35 +272,85 @@
 		270530421AAAB67E008DEB31 /* NSBundle+JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+JSONLoader.swift"; sourceTree = "<group>"; };
 		270530431AAAB67E008DEB31 /* String+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+JSON.swift"; sourceTree = "<group>"; };
 		270530441AAAB67E008DEB31 /* VeriJSONTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VeriJSONTests.swift; sourceTree = "<group>"; };
-		277CDC161AA8ED3600A12561 /* VeriJSON-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VeriJSON-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		277CDC1A1AA8ED3600A12561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		277CDC1B1AA8ED3600A12561 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		277CDC1D1AA8ED3600A12561 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		277CDC201AA8ED3600A12561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		277CDC221AA8ED3600A12561 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		277CDC251AA8ED3600A12561 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		277CDC2B1AA8ED3600A12561 /* VeriJSON-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VeriJSON-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		277CDC301AA8ED3600A12561 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		277CDC131AA8ED3600A12561 /* Frameworks */ = {
+		0BB07A9B1BB985A40085FB3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		277CDC281AA8ED3600A12561 /* Frameworks */ = {
+		0BB07AA51BB985A40085FB3A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB07AA91BB985A50085FB3A /* VeriJSONSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB07B051BB987050085FB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB07B0F1BB987050085FB3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB07B131BB987060085FB3A /* VeriJSONSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BB07AA01BB985A40085FB3A /* VeriJSON-Swift-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0BB07AA11BB985A40085FB3A /* VeriJSON-Swift-iOS.h */,
+				0BB07AA31BB985A40085FB3A /* Info.plist */,
+			);
+			path = "VeriJSON-Swift-iOS";
+			sourceTree = "<group>";
+		};
+		0BB07AAC1BB985A50085FB3A /* VeriJSON-Swift-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB07AAF1BB985A50085FB3A /* Info.plist */,
+			);
+			path = "VeriJSON-Swift-iOSTests";
+			sourceTree = "<group>";
+		};
+		0BB07AB71BB9862F0085FB3A /* VeriJSON-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27052FF61AAAB67E008DEB31 /* VeriJSONTests */,
+			);
+			name = "VeriJSON-Tests";
+			sourceTree = "<group>";
+		};
+		0BB07B0A1BB987050085FB3A /* VeriJSON-Swift-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				0BB07B0B1BB987050085FB3A /* VeriJSON-Swift-OSX.h */,
+				0BB07B0D1BB987050085FB3A /* Info.plist */,
+			);
+			path = "VeriJSON-Swift-OSX";
+			sourceTree = "<group>";
+		};
+		0BB07B161BB987060085FB3A /* VeriJSON-Swift-OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BB07B191BB987060085FB3A /* Info.plist */,
+			);
+			path = "VeriJSON-Swift-OSXTests";
+			sourceTree = "<group>";
+		};
 		27052FF21AAAB412008DEB31 /* VeriJSON */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +368,7 @@
 				270530441AAAB67E008DEB31 /* VeriJSONTests.swift */,
 			);
 			name = VeriJSONTests;
-			path = ../../VeriJSONTests;
+			path = ../VeriJSONTests;
 			sourceTree = "<group>";
 		};
 		27052FF71AAAB67E008DEB31 /* Data */ = {
@@ -321,9 +463,13 @@
 		277CDC0D1AA8ED3600A12561 = {
 			isa = PBXGroup;
 			children = (
+				0BB07AB71BB9862F0085FB3A /* VeriJSON-Tests */,
 				27052FF21AAAB412008DEB31 /* VeriJSON */,
-				277CDC181AA8ED3600A12561 /* VeriJSON-Swift */,
 				277CDC2E1AA8ED3600A12561 /* VeriJSON-SwiftTests */,
+				0BB07AA01BB985A40085FB3A /* VeriJSON-Swift-iOS */,
+				0BB07AAC1BB985A50085FB3A /* VeriJSON-Swift-iOSTests */,
+				0BB07B0A1BB987050085FB3A /* VeriJSON-Swift-OSX */,
+				0BB07B161BB987060085FB3A /* VeriJSON-Swift-OSXTests */,
 				277CDC171AA8ED3600A12561 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -331,37 +477,17 @@
 		277CDC171AA8ED3600A12561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				277CDC161AA8ED3600A12561 /* VeriJSON-Swift.app */,
-				277CDC2B1AA8ED3600A12561 /* VeriJSON-SwiftTests.xctest */,
+				0BB07A9F1BB985A40085FB3A /* VeriJSONSwift.framework */,
+				0BB07AA81BB985A40085FB3A /* VeriJSON-Swift-iOSTests.xctest */,
+				0BB07B091BB987050085FB3A /* VeriJSONSwift.framework */,
+				0BB07B121BB987050085FB3A /* VeriJSON-Swift-OSXTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		277CDC181AA8ED3600A12561 /* VeriJSON-Swift */ = {
-			isa = PBXGroup;
-			children = (
-				277CDC1B1AA8ED3600A12561 /* AppDelegate.swift */,
-				277CDC1D1AA8ED3600A12561 /* ViewController.swift */,
-				277CDC1F1AA8ED3600A12561 /* Main.storyboard */,
-				277CDC221AA8ED3600A12561 /* Images.xcassets */,
-				277CDC241AA8ED3600A12561 /* LaunchScreen.xib */,
-				277CDC191AA8ED3600A12561 /* Supporting Files */,
-			);
-			path = "VeriJSON-Swift";
-			sourceTree = "<group>";
-		};
-		277CDC191AA8ED3600A12561 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				277CDC1A1AA8ED3600A12561 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		277CDC2E1AA8ED3600A12561 /* VeriJSON-SwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				27052FF61AAAB67E008DEB31 /* VeriJSONTests */,
 				277CDC2F1AA8ED3600A12561 /* Supporting Files */,
 			);
 			path = "VeriJSON-SwiftTests";
@@ -377,40 +503,96 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXNativeTarget section */
-		277CDC151AA8ED3600A12561 /* VeriJSON-Swift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 277CDC351AA8ED3600A12561 /* Build configuration list for PBXNativeTarget "VeriJSON-Swift" */;
-			buildPhases = (
-				277CDC121AA8ED3600A12561 /* Sources */,
-				277CDC131AA8ED3600A12561 /* Frameworks */,
-				277CDC141AA8ED3600A12561 /* Resources */,
+/* Begin PBXHeadersBuildPhase section */
+		0BB07A9C1BB985A40085FB3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB07AA21BB985A40085FB3A /* VeriJSON-Swift-iOS.h in Headers */,
 			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "VeriJSON-Swift";
-			productName = "VeriJSON-Swift";
-			productReference = 277CDC161AA8ED3600A12561 /* VeriJSON-Swift.app */;
-			productType = "com.apple.product-type.application";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		277CDC2A1AA8ED3600A12561 /* VeriJSON-SwiftTests */ = {
+		0BB07B061BB987050085FB3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB07B0C1BB987050085FB3A /* VeriJSON-Swift-OSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0BB07A9E1BB985A40085FB3A /* VeriJSON-Swift-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 277CDC381AA8ED3600A12561 /* Build configuration list for PBXNativeTarget "VeriJSON-SwiftTests" */;
+			buildConfigurationList = 0BB07AB01BB985A50085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-iOS" */;
 			buildPhases = (
-				277CDC271AA8ED3600A12561 /* Sources */,
-				277CDC281AA8ED3600A12561 /* Frameworks */,
-				277CDC291AA8ED3600A12561 /* Resources */,
+				0BB07A9A1BB985A40085FB3A /* Sources */,
+				0BB07A9B1BB985A40085FB3A /* Frameworks */,
+				0BB07A9C1BB985A40085FB3A /* Headers */,
+				0BB07A9D1BB985A40085FB3A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				277CDC2D1AA8ED3600A12561 /* PBXTargetDependency */,
 			);
-			name = "VeriJSON-SwiftTests";
-			productName = "VeriJSON-SwiftTests";
-			productReference = 277CDC2B1AA8ED3600A12561 /* VeriJSON-SwiftTests.xctest */;
+			name = "VeriJSON-Swift-iOS";
+			productName = "VeriJSON-Swift-iOS";
+			productReference = 0BB07A9F1BB985A40085FB3A /* VeriJSONSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0BB07AA71BB985A40085FB3A /* VeriJSON-Swift-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB07AB31BB985A50085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-iOSTests" */;
+			buildPhases = (
+				0BB07AA41BB985A40085FB3A /* Sources */,
+				0BB07AA51BB985A40085FB3A /* Frameworks */,
+				0BB07AA61BB985A40085FB3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB07AAB1BB985A50085FB3A /* PBXTargetDependency */,
+			);
+			name = "VeriJSON-Swift-iOSTests";
+			productName = "VeriJSON-Swift-iOSTests";
+			productReference = 0BB07AA81BB985A40085FB3A /* VeriJSON-Swift-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0BB07B081BB987050085FB3A /* VeriJSON-Swift-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB07B1A1BB987060085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-OSX" */;
+			buildPhases = (
+				0BB07B041BB987050085FB3A /* Sources */,
+				0BB07B051BB987050085FB3A /* Frameworks */,
+				0BB07B061BB987050085FB3A /* Headers */,
+				0BB07B071BB987050085FB3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VeriJSON-Swift-OSX";
+			productName = "VeriJSON-Swift-OSX";
+			productReference = 0BB07B091BB987050085FB3A /* VeriJSONSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0BB07B111BB987050085FB3A /* VeriJSON-Swift-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BB07B1D1BB987060085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-OSXTests" */;
+			buildPhases = (
+				0BB07B0E1BB987050085FB3A /* Sources */,
+				0BB07B0F1BB987050085FB3A /* Frameworks */,
+				0BB07B101BB987050085FB3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB07B151BB987060085FB3A /* PBXTargetDependency */,
+			);
+			name = "VeriJSON-Swift-OSXTests";
+			productName = "VeriJSON-Swift-OSXTests";
+			productReference = 0BB07B121BB987050085FB3A /* VeriJSON-Swift-OSXTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -419,15 +601,22 @@
 		277CDC0E1AA8ED3600A12561 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Where Here";
 				TargetAttributes = {
-					277CDC151AA8ED3600A12561 = {
-						CreatedOnToolsVersion = 6.1.1;
+					0BB07A9E1BB985A40085FB3A = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					277CDC2A1AA8ED3600A12561 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 277CDC151AA8ED3600A12561;
+					0BB07AA71BB985A40085FB3A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					0BB07B081BB987050085FB3A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					0BB07B111BB987050085FB3A = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
@@ -444,157 +633,398 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				277CDC151AA8ED3600A12561 /* VeriJSON-Swift */,
-				277CDC2A1AA8ED3600A12561 /* VeriJSON-SwiftTests */,
+				0BB07A9E1BB985A40085FB3A /* VeriJSON-Swift-iOS */,
+				0BB07AA71BB985A40085FB3A /* VeriJSON-Swift-iOSTests */,
+				0BB07B081BB987050085FB3A /* VeriJSON-Swift-OSX */,
+				0BB07B111BB987050085FB3A /* VeriJSON-Swift-OSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		277CDC141AA8ED3600A12561 /* Resources */ = {
+		0BB07A9D1BB985A40085FB3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277CDC211AA8ED3600A12561 /* Main.storyboard in Resources */,
-				277CDC261AA8ED3600A12561 /* LaunchScreen.xib in Resources */,
-				277CDC231AA8ED3600A12561 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		277CDC291AA8ED3600A12561 /* Resources */ = {
+		0BB07AA61BB985A40085FB3A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2705307A1AAAB67E008DEB31 /* ObjectWithURLInvalid.json in Resources */,
-				270530841AAAB67E008DEB31 /* RealisticObjectOptional.json in Resources */,
-				270530651AAAB67E008DEB31 /* ObjectWithMultipleTypePattern.json in Resources */,
-				270530601AAAB67E008DEB31 /* ObjectWithHTTPURL.json in Resources */,
-				2705304A1AAAB67E008DEB31 /* ArrayPatternWithBadType.json in Resources */,
-				2705306D1AAAB67E008DEB31 /* ObjectWithNumberInvalid.json in Resources */,
-				270530561AAAB67E008DEB31 /* ObjectWithDateString.json in Resources */,
-				2705306C1AAAB67E008DEB31 /* ObjectWithNumberInRange.json in Resources */,
-				270530611AAAB67E008DEB31 /* ObjectWithHTTPURLPattern.json in Resources */,
-				270530571AAAB67E008DEB31 /* ObjectWithDateStringInvalid.json in Resources */,
-				2705304E1AAAB67E008DEB31 /* ObjectWithBoolAsNumber.json in Resources */,
-				270530581AAAB67E008DEB31 /* ObjectWithDateStringPattern.json in Resources */,
-				270530511AAAB67E008DEB31 /* ObjectWithColor.json in Resources */,
-				2705306B1AAAB67E008DEB31 /* ObjectWithNumber.json in Resources */,
-				2705307E1AAAB67E008DEB31 /* ObjectWithURLPattern.json in Resources */,
-				270530631AAAB67E008DEB31 /* ObjectWithMultipleTypeArray.json in Resources */,
-				2705304F1AAAB67E008DEB31 /* ObjectWithBoolInvalid.json in Resources */,
-				2705306E1AAAB67E008DEB31 /* ObjectWithNumberNotInRange.json in Resources */,
-				270530451AAAB67E008DEB31 /* ArrayOf0Strings.json in Resources */,
-				270530781AAAB67E008DEB31 /* ObjectWithStringPattern.json in Resources */,
-				270530621AAAB67E008DEB31 /* ObjectWithHTTPURLUppercaseScheme.json in Resources */,
-				2705307B1AAAB67E008DEB31 /* ObjectWithURLInvalidEmpty.json in Resources */,
-				2705304B1AAAB67E008DEB31 /* ExtraAttributes.json in Resources */,
-				270530711AAAB67E008DEB31 /* ObjectWithObject.json in Resources */,
-				2705307D1AAAB67E008DEB31 /* ObjectWithURLNonString.json in Resources */,
-				2705305A1AAAB67E008DEB31 /* ObjectWithEmailInvalid.json in Resources */,
-				270530881AAAB67E008DEB31 /* RealisticObjectPatternOptional.json in Resources */,
-				270530821AAAB67E008DEB31 /* ObjectWithWildcardValid.json in Resources */,
-				270530521AAAB67E008DEB31 /* ObjectWithColorInvalid.json in Resources */,
-				2705308D1AAAB67E008DEB31 /* SimpleObjectPattern.json in Resources */,
-				2705306A1AAAB67E008DEB31 /* ObjectWithNullString.json in Resources */,
-				270530461AAAB67E008DEB31 /* ArrayOf1String.json in Resources */,
-				270530681AAAB67E008DEB31 /* ObjectWithNonObject.json in Resources */,
-				2705308C1AAAB67E008DEB31 /* SimpleObjectInvalid.json in Resources */,
-				270530481AAAB67E008DEB31 /* ArrayOfStringsAndNumbers.json in Resources */,
-				270530491AAAB67E008DEB31 /* ArrayOfStringsPattern.json in Resources */,
-				2705307C1AAAB67E008DEB31 /* ObjectWithURLInvalidWhitespace.json in Resources */,
-				270530871AAAB67E008DEB31 /* RealisticObjectPatternInvalid.json in Resources */,
-				270530641AAAB67E008DEB31 /* ObjectWithMultipleTypeInt.json in Resources */,
-				2705304D1AAAB67E008DEB31 /* ObjectWithBool.json in Resources */,
-				2705307F1AAAB67E008DEB31 /* ObjectWithURLRelative.json in Resources */,
-				270530811AAAB67E008DEB31 /* ObjectWithWildcardPattern.json in Resources */,
-				2705305D1AAAB67E008DEB31 /* ObjectWithEmailPattern.json in Resources */,
-				2705305B1AAAB67E008DEB31 /* ObjectWithEmailInvalid2.json in Resources */,
-				270530471AAAB67E008DEB31 /* ArrayOf2Strings.json in Resources */,
-				270530771AAAB67E008DEB31 /* ObjectWithStringInvalid.json in Resources */,
-				2705304C1AAAB67E008DEB31 /* MissingAttributes.json in Resources */,
-				2705305C1AAAB67E008DEB31 /* ObjectWithEmailInvalidEmpty.json in Resources */,
-				270530691AAAB67E008DEB31 /* ObjectWithNullArray.json in Resources */,
-				270530541AAAB67E008DEB31 /* ObjectWithColorNumber.json in Resources */,
-				270530751AAAB67E008DEB31 /* ObjectWithOptionalStringPattern.json in Resources */,
-				270530721AAAB67E008DEB31 /* ObjectWithObjectInvalid.json in Resources */,
-				270530731AAAB67E008DEB31 /* ObjectWithObjectPattern.json in Resources */,
-				2705308B1AAAB67E008DEB31 /* SimpleObject.json in Resources */,
-				270530831AAAB67E008DEB31 /* RealisticObject.json in Resources */,
-				270530891AAAB67E008DEB31 /* SimpleArray.json in Resources */,
-				270530661AAAB67E008DEB31 /* ObjectWithMultipleTypeString.json in Resources */,
-				270530851AAAB67E008DEB31 /* RealisticObjectOptionalWrongType.json in Resources */,
-				270530591AAAB67E008DEB31 /* ObjectWithEmail.json in Resources */,
-				270530501AAAB67E008DEB31 /* ObjectWithBoolPattern.json in Resources */,
-				270530861AAAB67E008DEB31 /* RealisticObjectPattern.json in Resources */,
-				270530761AAAB67E008DEB31 /* ObjectWithString.json in Resources */,
-				270530801AAAB67E008DEB31 /* ObjectWithWildcardInvalid.json in Resources */,
-				2705305F1AAAB67E008DEB31 /* ObjectWithHTTPSURLUppercaseScheme.json in Resources */,
-				270530741AAAB67E008DEB31 /* ObjectWithOptionalArrayPattern.json in Resources */,
-				2705308A1AAAB67E008DEB31 /* SimpleArrayPattern.json in Resources */,
-				270530531AAAB67E008DEB31 /* ObjectWithColorInvalidNumber.json in Resources */,
-				270530671AAAB67E008DEB31 /* ObjectWithNonNullArray.json in Resources */,
-				270530701AAAB67E008DEB31 /* ObjectWithNumberRangePattern.json in Resources */,
-				2705305E1AAAB67E008DEB31 /* ObjectWithHTTPSURL.json in Resources */,
-				270530791AAAB67E008DEB31 /* ObjectWithURL.json in Resources */,
-				270530551AAAB67E008DEB31 /* ObjectWithColorPattern.json in Resources */,
-				2705306F1AAAB67E008DEB31 /* ObjectWithNumberPattern.json in Resources */,
+				0BB07ABB1BB9866A0085FB3A /* ArrayOf0Strings.json in Resources */,
+				0BB07ABC1BB9866A0085FB3A /* ArrayOf1String.json in Resources */,
+				0BB07ABD1BB9866A0085FB3A /* ArrayOf2Strings.json in Resources */,
+				0BB07ABE1BB9866A0085FB3A /* ArrayOfStringsAndNumbers.json in Resources */,
+				0BB07ABF1BB9866A0085FB3A /* ArrayOfStringsPattern.json in Resources */,
+				0BB07AC01BB9866A0085FB3A /* ArrayPatternWithBadType.json in Resources */,
+				0BB07AC11BB9866A0085FB3A /* ExtraAttributes.json in Resources */,
+				0BB07AC21BB9866A0085FB3A /* MissingAttributes.json in Resources */,
+				0BB07AC31BB9866A0085FB3A /* ObjectWithBool.json in Resources */,
+				0BB07AC41BB9866A0085FB3A /* ObjectWithBoolAsNumber.json in Resources */,
+				0BB07AC51BB9866A0085FB3A /* ObjectWithBoolInvalid.json in Resources */,
+				0BB07AC61BB9866A0085FB3A /* ObjectWithBoolPattern.json in Resources */,
+				0BB07AC71BB9866A0085FB3A /* ObjectWithColor.json in Resources */,
+				0BB07AC81BB9866A0085FB3A /* ObjectWithColorInvalid.json in Resources */,
+				0BB07AC91BB9866A0085FB3A /* ObjectWithColorInvalidNumber.json in Resources */,
+				0BB07ACA1BB9866A0085FB3A /* ObjectWithColorNumber.json in Resources */,
+				0BB07ACB1BB9866A0085FB3A /* ObjectWithColorPattern.json in Resources */,
+				0BB07ACC1BB9866A0085FB3A /* ObjectWithDateString.json in Resources */,
+				0BB07ACD1BB9866A0085FB3A /* ObjectWithDateStringInvalid.json in Resources */,
+				0BB07ACE1BB9866A0085FB3A /* ObjectWithDateStringPattern.json in Resources */,
+				0BB07ACF1BB9866A0085FB3A /* ObjectWithEmail.json in Resources */,
+				0BB07AD01BB9866A0085FB3A /* ObjectWithEmailInvalid.json in Resources */,
+				0BB07AD11BB9866A0085FB3A /* ObjectWithEmailInvalid2.json in Resources */,
+				0BB07AD21BB9866A0085FB3A /* ObjectWithEmailInvalidEmpty.json in Resources */,
+				0BB07AD31BB9866A0085FB3A /* ObjectWithEmailPattern.json in Resources */,
+				0BB07AD41BB9866A0085FB3A /* ObjectWithHTTPSURL.json in Resources */,
+				0BB07AD51BB9866A0085FB3A /* ObjectWithHTTPSURLUppercaseScheme.json in Resources */,
+				0BB07AD61BB9866A0085FB3A /* ObjectWithHTTPURL.json in Resources */,
+				0BB07AD71BB9866A0085FB3A /* ObjectWithHTTPURLPattern.json in Resources */,
+				0BB07AD81BB9866A0085FB3A /* ObjectWithHTTPURLUppercaseScheme.json in Resources */,
+				0BB07AD91BB9866A0085FB3A /* ObjectWithMultipleTypeArray.json in Resources */,
+				0BB07ADA1BB9866A0085FB3A /* ObjectWithMultipleTypeInt.json in Resources */,
+				0BB07ADB1BB9866A0085FB3A /* ObjectWithMultipleTypePattern.json in Resources */,
+				0BB07ADC1BB9866A0085FB3A /* ObjectWithMultipleTypeString.json in Resources */,
+				0BB07ADD1BB9866A0085FB3A /* ObjectWithNonNullArray.json in Resources */,
+				0BB07ADE1BB9866A0085FB3A /* ObjectWithNonObject.json in Resources */,
+				0BB07ADF1BB9866A0085FB3A /* ObjectWithNullArray.json in Resources */,
+				0BB07AE01BB9866A0085FB3A /* ObjectWithNullString.json in Resources */,
+				0BB07AE11BB9866A0085FB3A /* ObjectWithNumber.json in Resources */,
+				0BB07AE21BB9866A0085FB3A /* ObjectWithNumberInRange.json in Resources */,
+				0BB07AE31BB9866A0085FB3A /* ObjectWithNumberInvalid.json in Resources */,
+				0BB07AE41BB9866A0085FB3A /* ObjectWithNumberNotInRange.json in Resources */,
+				0BB07AE51BB9866A0085FB3A /* ObjectWithNumberPattern.json in Resources */,
+				0BB07AE61BB9866A0085FB3A /* ObjectWithNumberRangePattern.json in Resources */,
+				0BB07AE71BB9866A0085FB3A /* ObjectWithObject.json in Resources */,
+				0BB07AE81BB9866A0085FB3A /* ObjectWithObjectInvalid.json in Resources */,
+				0BB07AE91BB9866A0085FB3A /* ObjectWithObjectPattern.json in Resources */,
+				0BB07AEA1BB9866A0085FB3A /* ObjectWithOptionalArrayPattern.json in Resources */,
+				0BB07AEB1BB9866A0085FB3A /* ObjectWithOptionalStringPattern.json in Resources */,
+				0BB07AEC1BB9866B0085FB3A /* ObjectWithString.json in Resources */,
+				0BB07AED1BB9866B0085FB3A /* ObjectWithStringInvalid.json in Resources */,
+				0BB07AEE1BB9866B0085FB3A /* ObjectWithStringPattern.json in Resources */,
+				0BB07AEF1BB9866B0085FB3A /* ObjectWithURL.json in Resources */,
+				0BB07AF01BB9866B0085FB3A /* ObjectWithURLInvalid.json in Resources */,
+				0BB07AF11BB9866B0085FB3A /* ObjectWithURLInvalidEmpty.json in Resources */,
+				0BB07AF21BB9866B0085FB3A /* ObjectWithURLInvalidWhitespace.json in Resources */,
+				0BB07AF31BB9866B0085FB3A /* ObjectWithURLNonString.json in Resources */,
+				0BB07AF41BB9866B0085FB3A /* ObjectWithURLPattern.json in Resources */,
+				0BB07AF51BB9866B0085FB3A /* ObjectWithURLRelative.json in Resources */,
+				0BB07AF61BB9866B0085FB3A /* ObjectWithWildcardInvalid.json in Resources */,
+				0BB07AF71BB9866B0085FB3A /* ObjectWithWildcardPattern.json in Resources */,
+				0BB07AF81BB9866B0085FB3A /* ObjectWithWildcardValid.json in Resources */,
+				0BB07AF91BB9866B0085FB3A /* RealisticObject.json in Resources */,
+				0BB07AFA1BB9866B0085FB3A /* RealisticObjectOptional.json in Resources */,
+				0BB07AFB1BB9866B0085FB3A /* RealisticObjectOptionalWrongType.json in Resources */,
+				0BB07AFC1BB9866B0085FB3A /* RealisticObjectPattern.json in Resources */,
+				0BB07AFD1BB9866B0085FB3A /* RealisticObjectPatternInvalid.json in Resources */,
+				0BB07AFE1BB9866B0085FB3A /* RealisticObjectPatternOptional.json in Resources */,
+				0BB07AFF1BB9866B0085FB3A /* SimpleArray.json in Resources */,
+				0BB07B001BB9866B0085FB3A /* SimpleArrayPattern.json in Resources */,
+				0BB07B011BB9866B0085FB3A /* SimpleObject.json in Resources */,
+				0BB07B021BB9866B0085FB3A /* SimpleObjectInvalid.json in Resources */,
+				0BB07B031BB9866B0085FB3A /* SimpleObjectPattern.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB07B071BB987050085FB3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB07B101BB987050085FB3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB07B251BB987410085FB3A /* ArrayOf0Strings.json in Resources */,
+				0BB07B261BB987410085FB3A /* ArrayOf1String.json in Resources */,
+				0BB07B271BB987410085FB3A /* ArrayOf2Strings.json in Resources */,
+				0BB07B281BB987410085FB3A /* ArrayOfStringsAndNumbers.json in Resources */,
+				0BB07B291BB987410085FB3A /* ArrayOfStringsPattern.json in Resources */,
+				0BB07B2A1BB987410085FB3A /* ArrayPatternWithBadType.json in Resources */,
+				0BB07B2B1BB987410085FB3A /* ExtraAttributes.json in Resources */,
+				0BB07B2C1BB987410085FB3A /* MissingAttributes.json in Resources */,
+				0BB07B2D1BB987410085FB3A /* ObjectWithBool.json in Resources */,
+				0BB07B2E1BB987410085FB3A /* ObjectWithBoolAsNumber.json in Resources */,
+				0BB07B2F1BB987410085FB3A /* ObjectWithBoolInvalid.json in Resources */,
+				0BB07B301BB987410085FB3A /* ObjectWithBoolPattern.json in Resources */,
+				0BB07B311BB987410085FB3A /* ObjectWithColor.json in Resources */,
+				0BB07B321BB987410085FB3A /* ObjectWithColorInvalid.json in Resources */,
+				0BB07B331BB987410085FB3A /* ObjectWithColorInvalidNumber.json in Resources */,
+				0BB07B341BB987410085FB3A /* ObjectWithColorNumber.json in Resources */,
+				0BB07B351BB987410085FB3A /* ObjectWithColorPattern.json in Resources */,
+				0BB07B361BB987410085FB3A /* ObjectWithDateString.json in Resources */,
+				0BB07B371BB987410085FB3A /* ObjectWithDateStringInvalid.json in Resources */,
+				0BB07B381BB987410085FB3A /* ObjectWithDateStringPattern.json in Resources */,
+				0BB07B391BB987410085FB3A /* ObjectWithEmail.json in Resources */,
+				0BB07B3A1BB987410085FB3A /* ObjectWithEmailInvalid.json in Resources */,
+				0BB07B3B1BB987410085FB3A /* ObjectWithEmailInvalid2.json in Resources */,
+				0BB07B3C1BB987410085FB3A /* ObjectWithEmailInvalidEmpty.json in Resources */,
+				0BB07B3D1BB987410085FB3A /* ObjectWithEmailPattern.json in Resources */,
+				0BB07B3E1BB987410085FB3A /* ObjectWithHTTPSURL.json in Resources */,
+				0BB07B3F1BB987410085FB3A /* ObjectWithHTTPSURLUppercaseScheme.json in Resources */,
+				0BB07B401BB987410085FB3A /* ObjectWithHTTPURL.json in Resources */,
+				0BB07B411BB987410085FB3A /* ObjectWithHTTPURLPattern.json in Resources */,
+				0BB07B421BB987410085FB3A /* ObjectWithHTTPURLUppercaseScheme.json in Resources */,
+				0BB07B431BB987410085FB3A /* ObjectWithMultipleTypeArray.json in Resources */,
+				0BB07B441BB987410085FB3A /* ObjectWithMultipleTypeInt.json in Resources */,
+				0BB07B451BB987410085FB3A /* ObjectWithMultipleTypePattern.json in Resources */,
+				0BB07B461BB987410085FB3A /* ObjectWithMultipleTypeString.json in Resources */,
+				0BB07B471BB987410085FB3A /* ObjectWithNonNullArray.json in Resources */,
+				0BB07B481BB987410085FB3A /* ObjectWithNonObject.json in Resources */,
+				0BB07B491BB987410085FB3A /* ObjectWithNullArray.json in Resources */,
+				0BB07B4A1BB987410085FB3A /* ObjectWithNullString.json in Resources */,
+				0BB07B4B1BB987410085FB3A /* ObjectWithNumber.json in Resources */,
+				0BB07B4C1BB987410085FB3A /* ObjectWithNumberInRange.json in Resources */,
+				0BB07B4D1BB987410085FB3A /* ObjectWithNumberInvalid.json in Resources */,
+				0BB07B4E1BB987410085FB3A /* ObjectWithNumberNotInRange.json in Resources */,
+				0BB07B4F1BB987410085FB3A /* ObjectWithNumberPattern.json in Resources */,
+				0BB07B501BB987410085FB3A /* ObjectWithNumberRangePattern.json in Resources */,
+				0BB07B511BB987410085FB3A /* ObjectWithObject.json in Resources */,
+				0BB07B521BB987410085FB3A /* ObjectWithObjectInvalid.json in Resources */,
+				0BB07B531BB987410085FB3A /* ObjectWithObjectPattern.json in Resources */,
+				0BB07B541BB987410085FB3A /* ObjectWithOptionalArrayPattern.json in Resources */,
+				0BB07B551BB987410085FB3A /* ObjectWithOptionalStringPattern.json in Resources */,
+				0BB07B561BB987410085FB3A /* ObjectWithString.json in Resources */,
+				0BB07B571BB987410085FB3A /* ObjectWithStringInvalid.json in Resources */,
+				0BB07B581BB987420085FB3A /* ObjectWithStringPattern.json in Resources */,
+				0BB07B591BB987420085FB3A /* ObjectWithURL.json in Resources */,
+				0BB07B5A1BB987420085FB3A /* ObjectWithURLInvalid.json in Resources */,
+				0BB07B5B1BB987420085FB3A /* ObjectWithURLInvalidEmpty.json in Resources */,
+				0BB07B5C1BB987420085FB3A /* ObjectWithURLInvalidWhitespace.json in Resources */,
+				0BB07B5D1BB987420085FB3A /* ObjectWithURLNonString.json in Resources */,
+				0BB07B5E1BB987420085FB3A /* ObjectWithURLPattern.json in Resources */,
+				0BB07B5F1BB987420085FB3A /* ObjectWithURLRelative.json in Resources */,
+				0BB07B601BB987420085FB3A /* ObjectWithWildcardInvalid.json in Resources */,
+				0BB07B611BB987420085FB3A /* ObjectWithWildcardPattern.json in Resources */,
+				0BB07B621BB987420085FB3A /* ObjectWithWildcardValid.json in Resources */,
+				0BB07B631BB987420085FB3A /* RealisticObject.json in Resources */,
+				0BB07B641BB987420085FB3A /* RealisticObjectOptional.json in Resources */,
+				0BB07B651BB987420085FB3A /* RealisticObjectOptionalWrongType.json in Resources */,
+				0BB07B661BB987420085FB3A /* RealisticObjectPattern.json in Resources */,
+				0BB07B671BB987420085FB3A /* RealisticObjectPatternInvalid.json in Resources */,
+				0BB07B681BB987420085FB3A /* RealisticObjectPatternOptional.json in Resources */,
+				0BB07B691BB987420085FB3A /* SimpleArray.json in Resources */,
+				0BB07B6A1BB987420085FB3A /* SimpleArrayPattern.json in Resources */,
+				0BB07B6B1BB987420085FB3A /* SimpleObject.json in Resources */,
+				0BB07B6C1BB987420085FB3A /* SimpleObjectInvalid.json in Resources */,
+				0BB07B6D1BB987420085FB3A /* SimpleObjectPattern.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		277CDC121AA8ED3600A12561 /* Sources */ = {
+		0BB07A9A1BB985A40085FB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27052FF41AAAB412008DEB31 /* VeriJSON.swift in Sources */,
-				277CDC1E1AA8ED3600A12561 /* ViewController.swift in Sources */,
-				277CDC1C1AA8ED3600A12561 /* AppDelegate.swift in Sources */,
+				0BB07AB61BB985F30085FB3A /* VeriJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		277CDC271AA8ED3600A12561 /* Sources */ = {
+		0BB07AA41BB985A40085FB3A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27052FF51AAAB412008DEB31 /* VeriJSON.swift in Sources */,
-				270530901AAAB67E008DEB31 /* VeriJSONTests.swift in Sources */,
-				2705308E1AAAB67E008DEB31 /* NSBundle+JSONLoader.swift in Sources */,
-				2705308F1AAAB67E008DEB31 /* String+JSON.swift in Sources */,
+				0BB07AB81BB986530085FB3A /* VeriJSONTests.swift in Sources */,
+				0BB07AB91BB9865D0085FB3A /* NSBundle+JSONLoader.swift in Sources */,
+				0BB07ABA1BB9865D0085FB3A /* String+JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB07B041BB987050085FB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB07B211BB9871B0085FB3A /* VeriJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BB07B0E1BB987050085FB3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BB07B231BB987370085FB3A /* NSBundle+JSONLoader.swift in Sources */,
+				0BB07B241BB987370085FB3A /* String+JSON.swift in Sources */,
+				0BB07B221BB987310085FB3A /* VeriJSONTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		277CDC2D1AA8ED3600A12561 /* PBXTargetDependency */ = {
+		0BB07AAB1BB985A50085FB3A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 277CDC151AA8ED3600A12561 /* VeriJSON-Swift */;
-			targetProxy = 277CDC2C1AA8ED3600A12561 /* PBXContainerItemProxy */;
+			target = 0BB07A9E1BB985A40085FB3A /* VeriJSON-Swift-iOS */;
+			targetProxy = 0BB07AAA1BB985A50085FB3A /* PBXContainerItemProxy */;
+		};
+		0BB07B151BB987060085FB3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BB07B081BB987050085FB3A /* VeriJSON-Swift-OSX */;
+			targetProxy = 0BB07B141BB987060085FB3A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		277CDC1F1AA8ED3600A12561 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				277CDC201AA8ED3600A12561 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		277CDC241AA8ED3600A12561 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				277CDC251AA8ED3600A12561 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
+		0BB07AB11BB985A50085FB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-iOS";
+				PRODUCT_NAME = VeriJSONSwift;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0BB07AB21BB985A50085FB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-iOS";
+				PRODUCT_NAME = VeriJSONSwift;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0BB07AB41BB985A50085FB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0BB07AB51BB985A50085FB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0BB07B1B1BB987060085FB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-OSX";
+				PRODUCT_NAME = VeriJSONSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0BB07B1C1BB987060085FB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-OSX";
+				PRODUCT_NAME = VeriJSONSwift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0BB07B1E1BB987060085FB3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0BB07B1F1BB987060085FB3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "VeriJSON-Swift-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.where-here.VeriJSON-Swift-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		277CDC331AA8ED3600A12561 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -615,6 +1045,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -674,90 +1105,46 @@
 			};
 			name = Release;
 		};
-		277CDC361AA8ED3600A12561 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "VeriJSON-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-			};
-			name = Debug;
-		};
-		277CDC371AA8ED3600A12561 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "VeriJSON-Swift/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-			};
-			name = Release;
-		};
-		277CDC391AA8ED3600A12561 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "VeriJSON-SwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeriJSON-Swift.app/VeriJSON-Swift";
-			};
-			name = Debug;
-		};
-		277CDC3A1AA8ED3600A12561 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "VeriJSON-SwiftTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VeriJSON-Swift.app/VeriJSON-Swift";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0BB07AB01BB985A50085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB07AB11BB985A50085FB3A /* Debug */,
+				0BB07AB21BB985A50085FB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BB07AB31BB985A50085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB07AB41BB985A50085FB3A /* Debug */,
+				0BB07AB51BB985A50085FB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BB07B1A1BB987060085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB07B1B1BB987060085FB3A /* Debug */,
+				0BB07B1C1BB987060085FB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0BB07B1D1BB987060085FB3A /* Build configuration list for PBXNativeTarget "VeriJSON-Swift-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BB07B1E1BB987060085FB3A /* Debug */,
+				0BB07B1F1BB987060085FB3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		277CDC111AA8ED3600A12561 /* Build configuration list for PBXProject "VeriJSON-Swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				277CDC331AA8ED3600A12561 /* Debug */,
 				277CDC341AA8ED3600A12561 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		277CDC351AA8ED3600A12561 /* Build configuration list for PBXNativeTarget "VeriJSON-Swift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				277CDC361AA8ED3600A12561 /* Debug */,
-				277CDC371AA8ED3600A12561 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		277CDC381AA8ED3600A12561 /* Build configuration list for PBXNativeTarget "VeriJSON-SwiftTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				277CDC391AA8ED3600A12561 /* Debug */,
-				277CDC3A1AA8ED3600A12561 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

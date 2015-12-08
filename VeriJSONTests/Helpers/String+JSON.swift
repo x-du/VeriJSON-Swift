@@ -13,7 +13,7 @@ extension String {
     func toJson() -> AnyObject? {
         
         if let jsonData = self.dataUsingEncoding(NSUTF8StringEncoding) {
-            return NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: nil)
+            return try? NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers)
         } else {
             return nil
         }
