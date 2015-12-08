@@ -68,7 +68,7 @@ public class VeriJSON {
 
         
         switch value {
-        case let value as NSNull:
+        case _ as NSNull:
             return permitNull
         case let value as NSDictionary:
             if let pattern = pattern as? NSDictionary {
@@ -179,7 +179,7 @@ public class VeriJSON {
             }
             
         } else if "bool" == pattern {
-            if let value = value as? NSNumber {
+            if let _ = value as? NSNumber {
                 valid = true
             } else {
                 valid = false
